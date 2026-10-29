@@ -4,7 +4,7 @@ import { MdArrowBack } from "react-icons/md";
 export function Breadcrumbs({
   category,
   href = "/",
-  label = "Semua kalkulator",
+  label = "Beranda",
 }) {
   return (
     <nav

@@ -102,7 +102,7 @@ export function GpaCalculator() {
         ))}
       </nav>
 
-      <div className="grid items-start gap-8 lg:grid-cols-12">
+      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
         <section
           className="space-y-5 rounded-2xl bg-canvas p-5 shadow-sm md:p-6 lg:col-span-5"
           role="tabpanel"
@@ -125,6 +125,9 @@ export function GpaCalculator() {
                   : "Perubahan input langsung memperbarui hasil simulasi."}
               </p>
             </div>
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-surface-teal text-accent">
+              <MdSchool aria-hidden="true" className="text-xl" />
+            </span>
           </div>
 
           <fieldset className="space-y-2">
@@ -220,7 +223,7 @@ export function GpaCalculator() {
             </>
           )}
 
-          <div className="flex flex-col gap-3 border-t border-border pt-4 sm:flex-row">
+          <div className="flex flex-row gap-3 border-t border-border pt-4">
             <CalcButton
               className="flex-1 bg-accent text-white hover:bg-accent-hover"
               onClick={focusResults}
@@ -229,7 +232,7 @@ export function GpaCalculator() {
             >
               <span className="inline-flex items-center justify-center gap-2">
                 <MdCalculate aria-hidden="true" className="text-lg" />
-                Lihat hasil simulasi
+                Lihat hasil
               </span>
             </CalcButton>
             <CalcButton
@@ -238,7 +241,7 @@ export function GpaCalculator() {
               type="button"
               variant="action"
             >
-              <span className="inline-flex items-center justify-center gap-1.5 text-text-muted transition hover:text-accent">
+              <span className="inline-flex items-center justify-center gap-1.5">
                 <MdRestartAlt aria-hidden="true" className="text-lg" />
                 Reset
               </span>

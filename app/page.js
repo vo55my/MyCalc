@@ -225,21 +225,18 @@ export default function Home() {
                   MdLockOpen,
                   "Tanpa registrasi akun",
                   "Gunakan langsung seluruh simulator tanpa perlu memasukkan email, nomor telepon, maupun kata sandi rumit.",
-                  "Akses langsung",
                 ],
                 [
                   MdGavel,
                   "Formula standar",
                   "Disesuaikan dengan regulasi lokal aktif, standar BAZNAS RI, dan kurva gizi Kemenkes RI.",
-                  "Regulasi terverifikasi",
                 ],
                 [
                   MdNoAccounts,
                   "100% bebas iklan",
                   "Tidak ada spanduk, pop-up video, atau pelacak pihak ketiga yang mengganggu pekerjaan Anda.",
-                  "Performa murni",
                 ],
-              ].map(([Icon, title, description, label]) => (
+              ].map(([Icon, title, description]) => (
                 <article
                   className="rounded-[var(--radius-md)] bg-canvas p-6 shadow-xs"
                   key={title}
@@ -253,10 +250,6 @@ export default function Home() {
                   <p className="text-[15px] leading-relaxed text-text-muted">
                     {description}
                   </p>
-                  <div className="mt-4 flex items-center gap-1 text-xs font-medium text-accent">
-                    {label}
-                    <MdArrowForward aria-hidden="true" />
-                  </div>
                 </article>
               ))}
             </div>

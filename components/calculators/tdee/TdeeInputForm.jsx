@@ -219,7 +219,7 @@ export function TdeeInputForm({ values, result, update, adjustWeight, reset }) {
           ))}
         </fieldset>
 
-        <div className="flex flex-col gap-3 border-t border-border pt-4 sm:flex-row">
+        <div className="flex flex-row gap-3 border-t border-border pt-4">
           <CalcButton
             className="flex-1 bg-accent text-white hover:bg-accent-hover"
             type="submit"
@@ -227,7 +227,7 @@ export function TdeeInputForm({ values, result, update, adjustWeight, reset }) {
           >
             <span className="inline-flex items-center justify-center gap-2">
               <MdCalculate aria-hidden="true" className="text-lg" />
-              Hitung estimasi
+              Lihat hasil
             </span>
           </CalcButton>
           <CalcButton

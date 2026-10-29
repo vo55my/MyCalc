@@ -18,7 +18,7 @@ export function TdeeOverviewSection({ values, result, summary }) {
       role="status"
     >
       <div className="flex flex-col justify-between gap-3 border-b border-border/70 pb-5 sm:flex-row sm:items-center">
-        <div>
+        <div className="flex flex-col">
           <span className="text-xs font-semibold uppercase tracking-wider text-accent">
             Estimasi metabolisme &amp; energi
           </span>
